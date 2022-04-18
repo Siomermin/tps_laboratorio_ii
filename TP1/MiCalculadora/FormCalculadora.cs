@@ -115,9 +115,9 @@ namespace MiCalculadora
         /// <summary>
         /// Valida y modifica que los operadores ingresados sean validos para poder hacer la operacion correspondiente, si es asi, llama al metodo de clase "Operar" y retorna el resultado recibido.
         /// </summary>
-        /// <param name="numero1"></param>
-        /// <param name="numero2"></param>
-        /// <param name="operador"></param>
+        /// <param name="numero1">(string)Primer operando que ingresa el usuario.</param>
+        /// <param name="numero2">(string)Segundo operando que ingresa el usuario.</param>
+        /// <param name="operador">(string)Operador que elige el usuario para hacer la operacion.</param>
         /// <returns>(double)double.NaN si algun numero o el operador ingresado no superaron la validacion, y el resultado de "Operar" si todo estuvo correcto.</returns>
         private static double Operar(string numero1, string numero2, string operador)
         {

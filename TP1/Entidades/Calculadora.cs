@@ -8,7 +8,7 @@ namespace Entidades
         /// <summary>
         /// Valida que el operador ingresado sea '-', '/' , '*'. Caso contrario retorna '+'.
         /// </summary>
-        /// <param name="operador"></param>
+        /// <param name="operador">(char)Operador a validar.</param>
         /// <returns>(char)el operador ingresado.</returns>
         private static char ValidarOperador(char operador)
         {
@@ -31,9 +31,9 @@ namespace Entidades
         /// <summary>
         /// Segun el operador que el usuario haya ingresado, se realizara la operacion correspondiente.
         /// </summary>
-        /// <param name="num1"></param>
-        /// <param name="num2"></param>
-        /// <param name="operador"></param>
+        /// <param name="num1">(Operando)Objeto de la clase Operando.</param>
+        /// <param name="num2">(Operando)Objeto de la clase Operando.</param>
+        /// <param name="operador">(char)Operador a validar con el que se va a realizar la operacion.</param>
         /// <returns>(double) 0 si los parametros fueron "null" o el resultado de la operacion si funciono.</returns>
         public static double Operar(Operando num1, Operando num2, char operador)
         {

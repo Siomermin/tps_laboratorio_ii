@@ -29,7 +29,7 @@ namespace Entidades
         /// <summary>
         /// Recibe un numero en formato "string" y valida que pueda ser parseado a "double".
         /// </summary>
-        /// <param name="strNumero"></param>
+        /// <param name="strNumero">(string)Numero a validar.</param>
         /// <returns>(double) 0 si tryParse fue "false" y el numero parseado si fue "true"</returns>
         private static double ValidarOperando(string strNumero)
         {
@@ -57,7 +57,7 @@ namespace Entidades
         /// <summary>
         /// Valida si todos los caracteres de un "string" son solo '0' o '1'.
         /// </summary>
-        /// <param name="binario"></param>
+        /// <param name="binario">(string)Numero a validar si es binario.</param>
         /// <returns>(bool)true si lo son y false si no.</returns>
         private static bool EsBinario(string binario)
         {
@@ -73,7 +73,7 @@ namespace Entidades
         /// <summary>
         /// Valida que la cadena pasada por parametro es un numero binario y si es posible, lo convierte a decimal.
         /// </summary>
-        /// <param name="valorRecibido"></param>
+        /// <param name="valorRecibido">(string)Cadena a validar y convertir a decimal si es posible.</param>
         /// <returns>(string)"Valor inválido." si la cadena no es un binario y el numero decimal si la conversion fue correcta.</returns>
         public string BinarioDecimal(string valorRecibido)
         {
@@ -100,7 +100,7 @@ namespace Entidades
         /// <summary>
         /// Recibe un (double)numero por parametro y si es posible lo convierte a binario.
         /// </summary>
-        /// <param name="numero"></param>
+        /// <param name="numero">(double)Numero a convertir a binario si es posible.</param>
         /// <returns>(string)"Valor inválido." si no se pudo realizar con conversion y el numero binario si la conversion fue correcta.</returns>
         public string DecimalBinario(double numero)
         {
@@ -126,7 +126,7 @@ namespace Entidades
         /// <summary>
         /// Recibe un (string)numero por parametro y si es posible lo convierte a binario.
         /// </summary>
-        /// <param name="numero"></param>
+        /// <param name="numero">(string)Numero a convertir a binario si es posible.</param>
         /// <returns>(string)"Valor inválido." si no se pudo realizar con conversion y el numero binario si la conversion fue correcta.</returns>
         public string DecimalBinario(string numero)
         {
@@ -143,8 +143,8 @@ namespace Entidades
         /// <summary>
         /// Realiza la suma de los atributos numero de 2 objetos de la clase Operando.
         /// </summary>
-        /// <param name="num1"></param>
-        /// <param name="num2"></param>
+        /// <param name="num1">(Operando)Objeto de la clase Operando.</param>
+        /// <param name="num2">(Operando)Objeto de la clase Operando.</param>
         /// <returns>(double)Retorna el resultado de la operacion de los dos numeros.</returns>
         public static double operator +(Operando num1, Operando num2)
         {
@@ -154,8 +154,8 @@ namespace Entidades
         /// <summary>
         /// Realiza la resta de los atributos numero de 2 objetos de la clase Operando.
         /// </summary>
-        /// <param name="num1"></param>
-        /// <param name="num2"></param>
+        /// <param name="num1">(Operando)Objeto de la clase Operando.</param>
+        /// <param name="num2">(Operando)Objeto de la clase Operando.</param>
         /// <returns>(double)Retorna el resultado de la operacion de los dos numeros.</returns>
         public static double operator -(Operando num1, Operando num2)
         {
@@ -165,8 +165,8 @@ namespace Entidades
         /// <summary>
         /// Realiza la multiplicacion de los atributos numero de 2 objetos de la clase Operando.
         /// </summary>
-        /// <param name="num1"></param>
-        /// <param name="num2"></param>
+        /// <param name="num1">(Operando)Objeto de la clase Operando.</param>
+        /// <param name="num2">(Operando)Objeto de la clase Operando.</param>
         /// <returns>(double)Retorna el resultado de la operacion de los dos numeros.</returns>
         public static double operator *(Operando num1, Operando num2)
         {
@@ -176,8 +176,8 @@ namespace Entidades
         /// <summary>
         /// Realiza la division de los atributos numero de 2 objetos de la clase Operando y valida que el 2do numero no sea '0'.
         /// </summary>
-        /// <param name="num1"></param>
-        /// <param name="num2"></param>
+        /// <param name="num1">(Operando)Objeto de la clase Operando.</param>
+        /// <param name="num2">(Operando)Objeto de la clase Operando.</param>
         /// <returns>(double)Retorna el resultado de la operacion de los dos numeros si el 2do operando no era 0 y double.MinValue si lo era.</returns>
         public static double operator /(Operando num1, Operando num2)
         {
