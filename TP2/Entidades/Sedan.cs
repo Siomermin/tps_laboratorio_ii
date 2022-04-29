@@ -10,8 +10,9 @@ namespace Entidades
 {
     public class Sedan : Vehiculo
     {
-        public enum ETipo { CuatroPuertas, CincoPuertas }
+        
         ETipo tipo;
+        public enum ETipo { CuatroPuertas, CincoPuertas }
 
         /// <summary>
         /// Por defecto, TIPO será CuatroPuertas
@@ -55,7 +56,7 @@ namespace Entidades
 
             sb.AppendLine("SEDAN");
             sb.Append(base.Mostrar());
-            sb.AppendLine($"TAMAÑO : {Tamanio} : TIPO : {tipo}");
+            sb.AppendLine($"TAMAÑO : {Tamanio} , TIPO : {tipo}");
             sb.AppendLine("");
             sb.AppendLine("---------------------");
 

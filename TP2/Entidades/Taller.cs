@@ -103,13 +103,14 @@ namespace Entidades
             foreach (Vehiculo v in taller.vehiculos)
             {
                 if (v == vehiculo)
-                return taller;
+                {
+                    return taller;
+                }
             }
 
             if (taller.vehiculos.Count < taller.espacioDisponible)
             {
                 taller.vehiculos.Add(vehiculo);
-
             }
 
             return taller;
