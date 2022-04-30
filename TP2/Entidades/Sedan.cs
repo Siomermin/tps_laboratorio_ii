@@ -11,7 +11,7 @@ namespace Entidades
     public class Sedan : Vehiculo
     {
         
-        ETipo tipo;
+        private ETipo tipo;
         public enum ETipo { CuatroPuertas, CincoPuertas }
 
         /// <summary>

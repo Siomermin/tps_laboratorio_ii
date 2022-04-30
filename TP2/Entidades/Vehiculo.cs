@@ -11,9 +11,9 @@ namespace Entidades
     /// </summary>
     public abstract class Vehiculo
     {
-        EMarca marca;
-        string chasis;
-        ConsoleColor color;
+        private EMarca marca;
+        private string chasis;
+        private ConsoleColor color;
 
         public enum EMarca
         {
@@ -44,11 +44,6 @@ namespace Entidades
         {
             return (string)this;
         }
-
-        /// <summary>
-        /// Override del metodo Mostrar, muestra los atributos de la moto y su tamaño.
-        /// </summary>
-        /// <returns>(string)Cadena con todos los datos de la moto.</returns>
 
         /// <summary>
         /// Sobrecarga explicita del (string), crea una cadena con todos los atributos del Vehiculo que recibe por parametro.

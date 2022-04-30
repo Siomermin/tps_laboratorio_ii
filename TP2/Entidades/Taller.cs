@@ -22,7 +22,7 @@ namespace Entidades
         #region "Constructores"
         private Taller()
         {
-            vehiculos = new List<Vehiculo>();
+            this.vehiculos = new List<Vehiculo>();
         }
         public Taller(int espacioDisponible) :this()
         {
@@ -64,14 +64,12 @@ namespace Entidades
                         if (v is Suv)
                         {
                             sb.AppendLine(v.Mostrar());
-
                         }
                         break;
                     case ETipo.Ciclomotor:
                         if (v is Ciclomotor)
                         {
                             sb.AppendLine(v.Mostrar());
-
                         }
                         break;
                     case ETipo.Sedan:
@@ -84,7 +82,6 @@ namespace Entidades
                         sb.AppendLine(v.Mostrar());
                         break;
                 }
-                
             }
 
             return sb.ToString();
