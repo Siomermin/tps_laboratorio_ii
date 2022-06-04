@@ -1,0 +1,15 @@
+C:\Users\54113\Desktop\tps_laboratorio_ii\TP3\Gonzalez.Fermin.2A.TPFinal\IO\bin\Debug\net5.0\IO.deps.json
+C:\Users\54113\Desktop\tps_laboratorio_ii\TP3\Gonzalez.Fermin.2A.TPFinal\IO\bin\Debug\net5.0\IO.dll
+C:\Users\54113\Desktop\tps_laboratorio_ii\TP3\Gonzalez.Fermin.2A.TPFinal\IO\bin\Debug\net5.0\ref\IO.dll
+C:\Users\54113\Desktop\tps_laboratorio_ii\TP3\Gonzalez.Fermin.2A.TPFinal\IO\bin\Debug\net5.0\IO.pdb
+C:\Users\54113\Desktop\tps_laboratorio_ii\TP3\Gonzalez.Fermin.2A.TPFinal\IO\obj\Debug\net5.0\IO.csproj.AssemblyReference.cache
+C:\Users\54113\Desktop\tps_laboratorio_ii\TP3\Gonzalez.Fermin.2A.TPFinal\IO\obj\Debug\net5.0\IO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\54113\Desktop\tps_laboratorio_ii\TP3\Gonzalez.Fermin.2A.TPFinal\IO\obj\Debug\net5.0\IO.AssemblyInfoInputs.cache
+C:\Users\54113\Desktop\tps_laboratorio_ii\TP3\Gonzalez.Fermin.2A.TPFinal\IO\obj\Debug\net5.0\IO.AssemblyInfo.cs
+C:\Users\54113\Desktop\tps_laboratorio_ii\TP3\Gonzalez.Fermin.2A.TPFinal\IO\obj\Debug\net5.0\IO.csproj.CoreCompileInputs.cache
+C:\Users\54113\Desktop\tps_laboratorio_ii\TP3\Gonzalez.Fermin.2A.TPFinal\IO\obj\Debug\net5.0\IO.dll
+C:\Users\54113\Desktop\tps_laboratorio_ii\TP3\Gonzalez.Fermin.2A.TPFinal\IO\obj\Debug\net5.0\ref\IO.dll
+C:\Users\54113\Desktop\tps_laboratorio_ii\TP3\Gonzalez.Fermin.2A.TPFinal\IO\obj\Debug\net5.0\IO.pdb
+C:\Users\54113\Desktop\tps_laboratorio_ii\TP3\Gonzalez.Fermin.2A.TPFinal\IO\bin\Debug\net5.0\Entidades.dll
+C:\Users\54113\Desktop\tps_laboratorio_ii\TP3\Gonzalez.Fermin.2A.TPFinal\IO\bin\Debug\net5.0\Entidades.pdb
+C:\Users\54113\Desktop\tps_laboratorio_ii\TP3\Gonzalez.Fermin.2A.TPFinal\IO\obj\Debug\net5.0\IO.csproj.CopyComplete

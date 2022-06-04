@@ -1,0 +1,115 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0-windows7.0": {
+      "Entidades/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Entidades.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Entidades.dll": {}
+        }
+      },
+      "IO/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Entidades": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/IO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/IO.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Entidades/1.0.0": {
+      "type": "project",
+      "path": "../Entidades/Entidades.csproj",
+      "msbuildProject": "../Entidades/Entidades.csproj"
+    },
+    "IO/1.0.0": {
+      "type": "project",
+      "path": "../IO/IO.csproj",
+      "msbuildProject": "../IO/IO.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0-windows7.0": [
+      "Entidades >= 1.0.0",
+      "IO >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\54113\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP3\\Gonzalez.Fermin.2A.TPFinal\\Vista\\Vista.csproj",
+      "projectName": "Vista",
+      "projectPath": "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP3\\Gonzalez.Fermin.2A.TPFinal\\Vista\\Vista.csproj",
+      "packagesPath": "C:\\Users\\54113\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP3\\Gonzalez.Fermin.2A.TPFinal\\Vista\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\54113\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0-windows7.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0-windows7.0": {
+          "targetAlias": "net5.0-windows",
+          "projectReferences": {
+            "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP3\\Gonzalez.Fermin.2A.TPFinal\\Entidades\\Entidades.csproj": {
+              "projectPath": "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP3\\Gonzalez.Fermin.2A.TPFinal\\Entidades\\Entidades.csproj"
+            },
+            "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP3\\Gonzalez.Fermin.2A.TPFinal\\IO\\IO.csproj": {
+              "projectPath": "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP3\\Gonzalez.Fermin.2A.TPFinal\\IO\\IO.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0-windows7.0": {
+        "targetAlias": "net5.0-windows",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WindowsForms": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
