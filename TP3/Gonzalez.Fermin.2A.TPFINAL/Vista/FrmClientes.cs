@@ -18,7 +18,6 @@ namespace Vista
         private SaveFileDialog saveFileDialog;
         private string ultimoArchivo;
         private PuntoTxt puntoTxt = new PuntoTxt();
-        int index;
         Cliente clienteAux;
         private string UltimoArchivo
         {
@@ -42,17 +41,29 @@ namespace Vista
             saveFileDialog.Filter = "Archivo de texto | *.txt";
         }
 
+        /// <summary>
+        /// Instancia al frmAgregarCliente en forma modal, si el DialogResult es igual a OK, actualiza el estado de los botones y el DataGridView.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnAgregarCliente_Click(object sender, EventArgs e)
         {
-            FrmAgregarCliente frmAgregarCliente = new FrmAgregarCliente();
-
-            frmAgregarCliente.ShowDialog();
-
-            if (frmAgregarCliente.DialogResult == DialogResult.OK)
+            try
             {
-                EstadoBotones();
-                EntidadesFrm.ActualizarDGV(this.dgvListaClientes);
-                frmAgregarCliente.Close();
+                FrmAgregarCliente frmAgregarCliente = new FrmAgregarCliente();
+
+                frmAgregarCliente.ShowDialog();
+
+                if (frmAgregarCliente.DialogResult == DialogResult.OK)
+                {
+                    EstadoBotones();
+                    EntidadesFrm.ActualizarDGV(this.dgvListaClientes);
+                    frmAgregarCliente.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                EntidadesFrm.MostrarMensajeDeError(ex);
             }
         }
 
@@ -67,8 +78,6 @@ namespace Vista
         {
             try
             {
-                this.index = dgvListaClientes.CurrentRow.Index;
-
                 EstadoBotones();
             }
             catch (Exception ex)
@@ -78,42 +87,77 @@ namespace Vista
 
         }
 
+        /// <summary>
+        /// Instancia al frmModificarCliente en forma modal, si el DialogResult es igual a OK, actualiza el DataGridView.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnModificarCliente_Click(object sender, EventArgs e)
         {
-            FrmModificarCliente frmModificarCliente = new FrmModificarCliente(index);
-
-            frmModificarCliente.ShowDialog();
-
-            if (frmModificarCliente.DialogResult == DialogResult.OK)
+            try
             {
-                EntidadesFrm.ActualizarDGV(this.dgvListaClientes);
-            }
+                int indexModificar = dgvListaClientes.CurrentRow.Index;
 
-        }
+                FrmModificarCliente frmModificarCliente = new FrmModificarCliente(indexModificar);
 
-        private void bnEliminarCliente_Click(object sender, EventArgs e)
-        {
+                frmModificarCliente.ShowDialog();
 
-            this.clienteAux = Gimnasio.ListaClientes[index];
-
-            if (MessageBox.Show($"Esta seguro de eliminar a: \n{this.clienteAux} ?", "Eliminar Cliente", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
-            {
-                if (Gimnasio.EliminarCliente(this.clienteAux))
+                if (frmModificarCliente.DialogResult == DialogResult.OK)
                 {
                     EntidadesFrm.ActualizarDGV(this.dgvListaClientes);
-
-                    EstadoBotones();
                 }
+
+            }
+            catch (Exception ex)
+            {
+                EntidadesFrm.MostrarMensajeDeError(ex);
+            }
+
+        }
+
+        /// <summary>
+        /// Consulta al usuario, si esta seguro de eliminar al cliente especificado, si es asi, lo elimina y actualiza el DataGridView.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void bnEliminarCliente_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int indexEliminar = dgvListaClientes.CurrentRow.Index;
+
+                this.clienteAux = Gimnasio.ListaClientes[indexEliminar];
+
+                if (MessageBox.Show($"Esta seguro de eliminar a: \n{this.clienteAux} ?", "Eliminar Cliente", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                {
+                    if (Gimnasio.EliminarCliente(this.clienteAux))
+                    {
+                        EntidadesFrm.ActualizarDGV(this.dgvListaClientes);
+
+                        EstadoBotones();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                EntidadesFrm.MostrarMensajeDeError(ex);
             }
         }
 
+        /// <summary>
+        /// Le da al usuario la opcion de elegir donde guardar la credencial del cliente especificado, si tiene extension .txt, escribe el contenido en el archivo y muestra un mensaje.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnImprimirCredencial_Click(object sender, EventArgs e)
         {
             try
             {
                 UltimoArchivo = SeleccionarUbicacionGuardado();
 
-                this.clienteAux = Gimnasio.ListaClientes[index];
+                int indexCredencial = dgvListaClientes.CurrentRow.Index;
+
+                this.clienteAux = Gimnasio.ListaClientes[indexCredencial];
 
                 if (Path.GetExtension(UltimoArchivo) == ".txt")
                 {
@@ -128,6 +172,10 @@ namespace Vista
             }
         }
 
+        /// <summary>
+        /// Le da la opcion al usuario de elegir la ruta donde guardar los archivos.
+        /// </summary>
+        /// <returns></returns>
         private string SeleccionarUbicacionGuardado()
         {
             if (saveFileDialog.ShowDialog() == DialogResult.OK)
@@ -138,6 +186,10 @@ namespace Vista
             return string.Empty;
         }
 
+        /// <summary>
+        /// Actualiza el estado de los botones btnModificarCliente, btnEliminarCliente y btnImprimirCredencial segun la cantidad de clientes en el gimnasio.
+        /// si no hay, los botones se deshabilitan y sino, se habilitan.
+        /// </summary>
         private void EstadoBotones()
         {
             if (Gimnasio.ListaClientes.Count > 0)

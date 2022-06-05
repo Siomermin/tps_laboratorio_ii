@@ -7,6 +7,11 @@ namespace IO
     {
         protected abstract string Extension { get; }
 
+        /// <summary>
+        /// Valida si existe el archivo en la ruta especificada.
+        /// </summary>
+        /// <param name="ruta"></param>
+        /// <returns>(bool)true si existe y si no existe, lanza una excepcion.</returns>
         public bool ValidarSiExisteElArchivo(string ruta)
         {
             if (!File.Exists(ruta))
@@ -17,6 +22,11 @@ namespace IO
             return true;
         }
 
+        /// <summary>
+        /// Valida que la extension del archivo sea correcta.
+        /// </summary>
+        /// <param name="ruta"></param>
+        /// <returns>(bool)true si es la correcta, y si no es, lanza una excepcion.</returns>
         public bool ValidarExtension(string ruta)
         {
             if (Path.GetExtension(ruta) != Extension)

@@ -4,7 +4,7 @@ using System.Runtime.Serialization;
 namespace IO
 {
     [Serializable]
-    internal class ArchivoIncorrectoException : Exception
+    public class ArchivoIncorrectoException : Exception
     {
         public ArchivoIncorrectoException()
         {

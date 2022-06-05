@@ -48,6 +48,11 @@ namespace Vista
             puntoXml = new PuntoXml<List<Cliente>>();
         }
 
+        /// <summary>
+        /// Formulario que contiene la gestion de clientes y las credenciales.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnClientes_Click(object sender, EventArgs e)
         {
             try
@@ -62,6 +67,11 @@ namespace Vista
             }
         }
 
+        /// <summary>
+        /// Da la opcion al usuario de elegir la ruta o archivo desde donde se cargara la lista de clientes, luego se verifica cada uno de los clientes y se valida que tengan atributos validos, si es asi, se agregan al gimnasio.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnCargarClientes_Click(object sender, EventArgs e)
         {
             if (openFileDialog.ShowDialog() == DialogResult.OK)
@@ -96,6 +106,10 @@ namespace Vista
             }
         }
 
+        /// <summary>
+        /// Carga lista de clientes deserializados en una lista auxiliar.
+        /// </summary>
+        /// <param name="ultimoArchivo"></param>
         private void CargarClientes(string ultimoArchivo)
         {
             switch (Path.GetExtension(ultimoArchivo))
@@ -109,6 +123,11 @@ namespace Vista
             }
         }
 
+        /// <summary>
+        /// Llama al metodo guardarComo siempre y cuando existan clientes en el gimnasio.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnGuardarClientes_Click(object sender, EventArgs e)
         {
             if (Gimnasio.ListaClientes.Count > 0)
@@ -121,6 +140,9 @@ namespace Vista
             }
 
         }
+        /// <summary>
+        /// Guarda los archivos segun la extension que elegio el usuario y en un archivo ya existente.
+        /// </summary>
         private void Guardar()
         {
             try
@@ -141,6 +163,9 @@ namespace Vista
             }
         }
 
+        /// <summary>
+        /// Guarda la lista serializada en la ruta y con la extension que eligio el usuario.
+        /// </summary>
         private void GuardarComo()
         { 
         
@@ -164,6 +189,10 @@ namespace Vista
             }
         }
 
+        /// <summary>
+        /// Permite al usuario seleccionar que formato y que ruta va a utilizar para guardar/leer contenido.
+        /// </summary>
+        /// <returns></returns>
         private string SeleccionarUbicacionGuardado()
         {
             if (saveFileDialog.ShowDialog() == DialogResult.OK)

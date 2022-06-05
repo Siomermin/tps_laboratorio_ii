@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfCliente xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Cliente>
-    <Nombre>pepe</Nombre>
-    <Apellido>gon</Apellido>
-    <Edad>11</Edad>
+    <Nombre>Pepe</Nombre>
+    <Apellido>Gonzalez</Apellido>
+    <Edad>20</Edad>
     <Dni>12345678</Dni>
     <PlanGimnasio>Basico</PlanGimnasio>
   </Cliente>
@@ -51,7 +51,7 @@
   </Cliente>
   <Cliente>
     <Nombre>Lenna</Nombre>
-    <Apellido>Insole</Apellido>
+    <Apellido>Insolada</Apellido>
     <Edad>18</Edad>
     <Dni>23808186</Dni>
     <PlanGimnasio>Hercules</PlanGimnasio>

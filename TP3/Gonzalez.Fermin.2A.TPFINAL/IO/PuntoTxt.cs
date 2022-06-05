@@ -17,6 +17,11 @@ namespace IO
             }
         }
 
+        /// <summary>
+        /// Valida que la extension sea .txt, si es asi, escribe el contenido al archivo que eligio el usuario.
+        /// </summary>
+        /// <param name="ruta"></param>
+        /// <param name="contenido"></param>
         public void GuardarComo(string ruta, string contenido)
         {
             if (ValidarExtension(ruta))
@@ -25,6 +30,11 @@ namespace IO
             }
         }
 
+        /// <summary>
+        /// Escribe el contenido a al archivo especificado.
+        /// </summary>
+        /// <param name="ruta"></param>
+        /// <param name="contenido"></param>
         private void GuardarArchivo(string ruta, string contenido)
         {
             using (StreamWriter streamWriter = new StreamWriter(ruta))

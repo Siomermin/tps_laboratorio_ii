@@ -1670,6 +1670,19 @@
         "runtime": {
           "bin/placeholder/Entidades.dll": {}
         }
+      },
+      "IO/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Entidades": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/IO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/IO.dll": {}
+        }
       }
     }
   },
@@ -6118,11 +6131,17 @@
       "type": "project",
       "path": "../Entidades/Entidades.csproj",
       "msbuildProject": "../Entidades/Entidades.csproj"
+    },
+    "IO/1.0.0": {
+      "type": "project",
+      "path": "../IO/IO.csproj",
+      "msbuildProject": "../IO/IO.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "Entidades >= 1.0.0",
+      "IO >= 1.0.0",
       "MSTest.TestAdapter >= 2.2.3",
       "MSTest.TestFramework >= 2.2.3",
       "Microsoft.NET.Test.Sdk >= 16.9.4",
@@ -6158,6 +6177,9 @@
           "projectReferences": {
             "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP3\\Gonzalez.Fermin.2A.TPFinal\\Entidades\\Entidades.csproj": {
               "projectPath": "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP3\\Gonzalez.Fermin.2A.TPFinal\\Entidades\\Entidades.csproj"
+            },
+            "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP3\\Gonzalez.Fermin.2A.TPFinal\\IO\\IO.csproj": {
+              "projectPath": "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP3\\Gonzalez.Fermin.2A.TPFinal\\IO\\IO.csproj"
             }
           }
         }

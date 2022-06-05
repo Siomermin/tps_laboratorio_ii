@@ -22,10 +22,12 @@ namespace Vista
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             AgregarCliente();
-            //EntidadesFrm.ActualizarDGV(tablaClientes);
 
         }
 
+        /// <summary>
+        /// Agrega un cliente al gimnasio siempre que tenga atributos validos y cumpla las condiciones , si no se cumplen, se muestra el mensaje de error correspondiente.
+        /// </summary>
         private void AgregarCliente()
         {
             try
@@ -33,7 +35,7 @@ namespace Vista
 
                 this.clienteAux = Cliente.ValidarDatosCliente(this.txtNombre.Text, this.txtApellido.Text, this.nudEdad.Value, this.txtDNI.Text, this.cmbPlan.SelectedIndex);
 
-                if (clienteAux is not null)    
+                if (this.clienteAux is not null)    
                 {
                     if (Gimnasio.AgregarCliente(clienteAux))
                     {

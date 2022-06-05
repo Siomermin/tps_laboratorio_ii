@@ -29,7 +29,7 @@ namespace Entidades
         public string Apellido { get => apellido; set => apellido = value; }
         public int Edad { get => edad; set => edad = value; }
         public int Dni { get => dni; set => dni = value; }
-        public ETipoPlanGimnasio PlanGimnasio { get => planGimnasio; set => planGimnasio = value; }
+        public ETipoPlanGimnasio PlanGimnasio { get => planGimnasio; set => planGimnasio = value; } 
 
         /// <summary>
         /// Compara si dos clientes son iguales por dni.
@@ -58,6 +58,10 @@ namespace Entidades
             return !(c1 == c2);
         }
 
+        /// <summary>
+        /// Genera un string que muestra todos los atributos de un cliente.
+        /// </summary>
+        /// <returns>(string)datos del cliente.</returns>
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
@@ -71,6 +75,11 @@ namespace Entidades
             return sb.ToString();
         }
 
+        /// <summary>
+        /// Genera un string con formato de una credencial que otorga el gimnasio por ser miembro.
+        /// </summary>
+        /// <param name="cliente"></param>
+        /// <returns>(string)la credencial.</returns>
         public static string GenerarCredencialCliente(Cliente cliente)
         {
             StringBuilder sb = new StringBuilder();
@@ -85,6 +94,11 @@ namespace Entidades
             return sb.ToString();
         }
 
+        /// <summary>
+        /// Compara dos clientes y verifica que sea del tipo (Cliente).
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns>(bool)true si son iguales o (bool)false si son distintos.</returns>
         public override bool Equals(object obj)
         {
             if (obj.GetType() == typeof(Cliente))

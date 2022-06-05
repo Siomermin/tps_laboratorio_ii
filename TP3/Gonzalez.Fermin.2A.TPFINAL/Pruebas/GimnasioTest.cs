@@ -11,7 +11,7 @@ namespace Pruebas
         {
             //Arrange
             Cliente clienteAux = new Cliente("pepe", "pepardo", 20, 42312456, ETipoPlanGimnasio.Premium);
-            Gimnasio.AgregarCliente(clienteAux);
+            Gimnasio.ListaClientes.Add(clienteAux);
             bool retorno;
 
             //Act
@@ -21,7 +21,48 @@ namespace Pruebas
             Assert.IsTrue(retorno);
         }
 
+        [TestMethod]
+        public void ValidarClienteExistente_DevuelveFalse_CuandoElClienteNoEstaEnElGimnasio()
+        {
+            //Arrange
+            Cliente clienteAux = new Cliente("pepe", "pepardo", 20, 42312456, ETipoPlanGimnasio.Premium);
+            bool retorno;
+
+            //Act
+            retorno = Gimnasio.ValidarClienteExistente(clienteAux);
+
+            //Assert
+            Assert.IsFalse(retorno);
+        }
+
+        [TestMethod]
+        public void AgregarCliente_DevuelveTrue_CuandoElClienteSeAgregoAlGimnasio()
+        {
+            //Arrange
+            Cliente clienteAux = new Cliente("pepe", "pepardo", 20, 42312456, ETipoPlanGimnasio.Premium);
+            bool retorno;
+
+            //Act
+            retorno = Gimnasio.AgregarCliente(clienteAux);
+
+            //Assert
+            Assert.IsTrue(retorno);
+        }
 
 
+        [TestMethod]
+        public void EliminarCliente_DevuelveTrue_CuandoElClienteSeEliminoDelGimnasio()
+        {
+            //Arrange
+            Cliente clienteAux = new Cliente("pepe", "pepardo", 20, 42312456, ETipoPlanGimnasio.Premium);
+            Gimnasio.AgregarCliente(clienteAux);
+            bool retorno;
+
+            //Act
+            retorno = Gimnasio.EliminarCliente(clienteAux);
+
+            //Assert
+            Assert.IsTrue(retorno);
+        }
     }
 }

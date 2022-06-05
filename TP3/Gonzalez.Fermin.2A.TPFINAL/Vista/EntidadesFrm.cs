@@ -10,12 +10,20 @@ namespace Vista
 {
     public static class EntidadesFrm
     {
+        /// <summary>
+        /// Muestra el mensaje de error de la excepcion que llega por parametro y los detalles del StackTrace.
+        /// </summary>
+        /// <param name="ex"></param>
         public static void MostrarMensajeDeError(Exception ex)
         {
             MessageBox.Show($"Se produjo un error.\n\nMensaje de error: {ex.Message}\n\n" +
                     $"Detalles:\n\n{ex.StackTrace}");
         }
 
+        /// <summary>
+        /// Actualiza el DataGridView con los clientes del gimnasio.
+        /// </summary>
+        /// <param name="dgv"></param>
         public static void ActualizarDGV(DataGridView dgv)
         {
             dgv.DataSource = null;
