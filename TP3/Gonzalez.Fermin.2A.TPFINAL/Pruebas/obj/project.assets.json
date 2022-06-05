@@ -6154,11 +6154,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP3\\Gonzalez.Fermin.2A.TPFinal\\Pruebas\\Pruebas.csproj",
+      "projectUniqueName": "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP3\\Gonzalez.Fermin.2A.TPFINAL\\Pruebas\\Pruebas.csproj",
       "projectName": "Pruebas",
-      "projectPath": "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP3\\Gonzalez.Fermin.2A.TPFinal\\Pruebas\\Pruebas.csproj",
+      "projectPath": "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP3\\Gonzalez.Fermin.2A.TPFINAL\\Pruebas\\Pruebas.csproj",
       "packagesPath": "C:\\Users\\54113\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP3\\Gonzalez.Fermin.2A.TPFinal\\Pruebas\\obj\\",
+      "outputPath": "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP3\\Gonzalez.Fermin.2A.TPFINAL\\Pruebas\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\54113\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6175,11 +6175,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP3\\Gonzalez.Fermin.2A.TPFinal\\Entidades\\Entidades.csproj": {
-              "projectPath": "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP3\\Gonzalez.Fermin.2A.TPFinal\\Entidades\\Entidades.csproj"
+            "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP3\\Gonzalez.Fermin.2A.TPFINAL\\Entidades\\Entidades.csproj": {
+              "projectPath": "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP3\\Gonzalez.Fermin.2A.TPFINAL\\Entidades\\Entidades.csproj"
             },
-            "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP3\\Gonzalez.Fermin.2A.TPFinal\\IO\\IO.csproj": {
-              "projectPath": "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP3\\Gonzalez.Fermin.2A.TPFinal\\IO\\IO.csproj"
+            "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP3\\Gonzalez.Fermin.2A.TPFINAL\\IO\\IO.csproj": {
+              "projectPath": "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP3\\Gonzalez.Fermin.2A.TPFINAL\\IO\\IO.csproj"
             }
           }
         }

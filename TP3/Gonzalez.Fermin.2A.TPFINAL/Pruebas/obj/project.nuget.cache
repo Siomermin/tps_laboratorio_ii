@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "m4phLAgvkz+X5vMHcic/hl/06ZRJ/x/R4EW4Selk4l20F2NzPY7ljvxUcDgmkGC0gVcv33yjNAXdgTjJ/lUGzg==",
+  "dgSpecHash": "pIxKE4IY0kVuaO7VbvRr6QX/6kC3UQi0dYA8VmFNDEuf7+zjk9cctYMuNE6eCo2HUibmCxYzOFElv0Wc0rIYHQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP3\\Gonzalez.Fermin.2A.TPFinal\\Pruebas\\Pruebas.csproj",
+  "projectFilePath": "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP3\\Gonzalez.Fermin.2A.TPFINAL\\Pruebas\\Pruebas.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\54113\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
     "C:\\Users\\54113\\.nuget\\packages\\microsoft.codecoverage\\16.9.4\\microsoft.codecoverage.16.9.4.nupkg.sha512",
