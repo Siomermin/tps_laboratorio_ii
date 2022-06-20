@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP_4\\Vista\\Vista.csproj": {}
+    "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP4\\Vista\\Vista.csproj": {}
   },
   "projects": {
-    "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP_4\\DAO\\DAO.csproj": {
+    "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP4\\DAO\\DAO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP_4\\DAO\\DAO.csproj",
+        "projectUniqueName": "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP4\\DAO\\DAO.csproj",
         "projectName": "DAO",
-        "projectPath": "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP_4\\DAO\\DAO.csproj",
+        "projectPath": "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP4\\DAO\\DAO.csproj",
         "packagesPath": "C:\\Users\\54113\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP_4\\DAO\\obj\\",
+        "outputPath": "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP4\\DAO\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\54113\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP_4\\Entidades\\Entidades.csproj": {
-                "projectPath": "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP_4\\Entidades\\Entidades.csproj"
+              "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP4\\Entidades\\Entidades.csproj": {
+                "projectPath": "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP4\\Entidades\\Entidades.csproj"
               }
             }
           }
@@ -68,14 +68,14 @@
         }
       }
     },
-    "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP_4\\Entidades\\Entidades.csproj": {
+    "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP4\\Entidades\\Entidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP_4\\Entidades\\Entidades.csproj",
+        "projectUniqueName": "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP4\\Entidades\\Entidades.csproj",
         "projectName": "Entidades",
-        "projectPath": "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP_4\\Entidades\\Entidades.csproj",
+        "projectPath": "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP4\\Entidades\\Entidades.csproj",
         "packagesPath": "C:\\Users\\54113\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP_4\\Entidades\\obj\\",
+        "outputPath": "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP4\\Entidades\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\54113\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -122,14 +122,14 @@
         }
       }
     },
-    "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP_4\\IO\\IO.csproj": {
+    "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP4\\IO\\IO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP_4\\IO\\IO.csproj",
+        "projectUniqueName": "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP4\\IO\\IO.csproj",
         "projectName": "IO",
-        "projectPath": "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP_4\\IO\\IO.csproj",
+        "projectPath": "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP4\\IO\\IO.csproj",
         "packagesPath": "C:\\Users\\54113\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP_4\\IO\\obj\\",
+        "outputPath": "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP4\\IO\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\54113\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -146,8 +146,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP_4\\Entidades\\Entidades.csproj": {
-                "projectPath": "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP_4\\Entidades\\Entidades.csproj"
+              "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP4\\Entidades\\Entidades.csproj": {
+                "projectPath": "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP4\\Entidades\\Entidades.csproj"
               }
             }
           }
@@ -180,14 +180,14 @@
         }
       }
     },
-    "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP_4\\Vista\\Vista.csproj": {
+    "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP4\\Vista\\Vista.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP_4\\Vista\\Vista.csproj",
+        "projectUniqueName": "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP4\\Vista\\Vista.csproj",
         "projectName": "Vista",
-        "projectPath": "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP_4\\Vista\\Vista.csproj",
+        "projectPath": "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP4\\Vista\\Vista.csproj",
         "packagesPath": "C:\\Users\\54113\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP_4\\Vista\\obj\\",
+        "outputPath": "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP4\\Vista\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\54113\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -204,14 +204,14 @@
           "net5.0-windows7.0": {
             "targetAlias": "net5.0-windows",
             "projectReferences": {
-              "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP_4\\DAO\\DAO.csproj": {
-                "projectPath": "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP_4\\DAO\\DAO.csproj"
+              "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP4\\DAO\\DAO.csproj": {
+                "projectPath": "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP4\\DAO\\DAO.csproj"
               },
-              "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP_4\\Entidades\\Entidades.csproj": {
-                "projectPath": "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP_4\\Entidades\\Entidades.csproj"
+              "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP4\\Entidades\\Entidades.csproj": {
+                "projectPath": "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP4\\Entidades\\Entidades.csproj"
               },
-              "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP_4\\IO\\IO.csproj": {
-                "projectPath": "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP_4\\IO\\IO.csproj"
+              "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP4\\IO\\IO.csproj": {
+                "projectPath": "C:\\Users\\54113\\Desktop\\tps_laboratorio_ii\\TP4\\IO\\IO.csproj"
               }
             }
           }
